@@ -62,6 +62,9 @@ header nav .menu-header .navigation-menu__1 li, header nav .menu-header .navigat
   margin-right: 30px;
   list-style: none;
 }
+header nav .menu-header .navigation-menu__1 li:hover, header nav .menu-header .navigation-menu__2 li:hover {
+  transform: scale(1.08);
+}
 header nav .menu-header .navigation-menu__1 li a, header nav .menu-header .navigation-menu__2 li a {
   font-family: Roboto;
   color: #FFF;
@@ -115,6 +118,9 @@ header .button-1 {
   width: 100%;
   justify-content: center;
 }
+header .button-1 :hover {
+  transform: scale(0.98);
+}
 header .button-1 button {
   width: 170px;
   height: 50px;
@@ -129,27 +135,118 @@ header .button-1 button {
   border-left: none;
   cursor: pointer;
 }
-header .button-1 button :active {
-  overflow: hidden;
-}
-header .slider {
+header .sliders {
   position: relative;
   margin-top: 325px;
   padding-bottom: 42px;
-  width: 100%;
   display: flex;
   justify-content: center;
 }
-header .slider input {
+header .sliders .slider {
   height: 11px;
-  border: 3px solid #c7b299;
-  background-color: rgba(255, 255, 255, 0.24);
   z-index: 5;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.24);
+  border: 5px solid #c7b299;
+}
+header .sliders .slider:hover {
+  transform: scale(1.5);
 }
 
-.competence {
+.competences {
   height: 100%;
   position: relative;
+  display: flex;
+  margin: 80px 0;
+  padding: 0 345px;
+  font-family: Raleway;
+}
+.competences .competence {
+  text-align: center;
+  width: 266px;
+  margin-left: 17px;
+  margin-right: 17px;
+  border-bottom: 3px solid #dbdbdb;
+  padding-bottom: 33px;
+}
+.competences .competence:nth-child(2n+2) {
+  color: #c7b299;
+  border-bottom: 3px solid;
+}
+.competences .competence i {
+  font-size: 47px;
+}
+.competences .competence h4 {
+  font-size: 21px;
+}
+.competences .competence p {
+  font-size: 13px;
+  color: #555555;
+}
+.competences .competence i, .competences .competence h4, .competences .competence p {
+  width: 100%;
+}
+
+.section-1 {
+  width: 100%;
+  font-family: Raleway;
+  background: #f3f3f3;
+}
+.section-1 .sct-1_part-1 .titre-sct-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section-1 .sct-1_part-1 .titre-sct-1 h3 {
+  font-size: 28px;
+  margin-top: 82px;
+  margin-bottom: 24px;
+  padding-bottom: 0;
+}
+.section-1 .sct-1_part-1 .titre-sct-1 p {
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 15px;
+  margin-bottom: 522px;
+}
+.section-1 .sct-1_part-2 {
+  height: 100%;
+  width: 100%;
+  color: #FFF;
+  background: #24140c;
+  display: flex;
+  justify-content: space-around;
+}
+.section-1 .sct-1_part-2 h3 {
+  margin-top: 50px;
+  padding: 0;
+  margin-bottom: 9px;
+  font-size: 26px;
+}
+.section-1 .sct-1_part-2 h3 strong {
+  color: #c7b299;
+}
+.section-1 .sct-1_part-2 p {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 49px;
+}
+.section-1 .sct-1_part-2 .button-2 :hover {
+  transform: scale(0.98);
+}
+.section-1 .sct-1_part-2 .button-2 button {
+  width: 170px;
+  height: 50px;
+  margin: 50px 0px;
+  font-size: 15px;
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #998675;
+  border-bottom: 3px solid #816f5f;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=site.css.map */
