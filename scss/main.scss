@@ -1,7 +1,9 @@
 $color-text-1: #FFF;
-$color-text-2: #555555;
+$color-text-2: #9e9e9e;
+$color-titre: #555555;
 $color-text-hover: #c7b299;
 $color-button: #998675;
+$font-button: Raleway;
 
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -14,6 +16,10 @@ body {
 img {
     object-fit: cover;
     width: 100%;
+}
+
+button {
+    font-family: $font-button;
 }
 
 // --------------------------------------------------------------------------------------------------------------------------------------------------
@@ -145,7 +151,7 @@ header {
         }
     }
 
-    // bouton
+    // boutton 1
     .button-1 {
         display: flex;
         width: 100%;
@@ -212,20 +218,30 @@ header {
         margin-right: 17px;
         border-bottom: 3px solid #dbdbdb;
         padding-bottom: 33px;
-        &:nth-child(2n+2) {
+        cursor: pointer;
+        &:hover {
+            transition: 0.2s;
             color: $color-text-hover;
             border-bottom: 3px solid;
+
         }
         i {
             font-size: 47px;
+            &:nth-child(2) {
+                color: $color-titre;
+            }
         }
 
         h4 {
             font-size: 21px;
+            &:nth-child(2n+1) {
+                color: $color-titre;
+            }
         }
         
         p {
             font-size: 13px;
+            color: $color-text-2;
             color: $color-text-2;
         }
         
@@ -245,6 +261,9 @@ header {
     font-family: Raleway;
     background: #f3f3f3;
     .sct-1_part-1 {
+        text-align: center;
+        margin: auto;
+        width: 50%;
         .titre-sct-1 {
             display: flex;
             flex-direction: column;
@@ -254,6 +273,7 @@ header {
                 margin-top: 82px;
                 margin-bottom: 24px;
                 padding-bottom: 0;
+                color: $color-titre;
             }
 
             p {
@@ -261,10 +281,12 @@ header {
                 padding-top: 0;
                 font-size: 15px;
                 margin-bottom: 522px;
+                color: $color-text-2;
             }
         }
     }
 
+    // information suplementaire
     .sct-1_part-2 {
         height: 100%;
         width: 100%;
@@ -288,6 +310,7 @@ header {
             margin-bottom: 49px;
         }
 
+        // boutton 2
         .button-2 {
             :hover {
                 transform: scale(0.98);
@@ -307,8 +330,183 @@ header {
                 cursor: pointer;
             } 
         }
-
     }
 }
 
-// information suplementaire
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// Titre et Navigation des differents projets
+.titre-nav-projet {
+    width: 50%;
+    text-align: center;
+    margin: auto;
+    font-family: Raleway;
+    h3 {
+        font-size: 26px;
+        padding-top: 0;
+        margin-top: 82px;
+        margin-bottom: 0;
+        color: $color-titre;
+    }
+    
+    p {
+        padding-top: 0;
+        margin-top: 24px;
+        color: $color-text-2;
+    }
+
+    .menu-projet {
+        ul {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            list-style: none;
+            width: 80%;
+            justify-content: space-between;
+            li {
+                border: 1px solid $color-text-2;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                padding-right: 3%;
+                padding-left: 3%;
+                border-radius: 5px;
+                color: $color-text-2;
+                text-decoration: none;
+                cursor: pointer;
+                &:hover{
+                    transition: 0.3s;
+                    background-color: $color-button;
+                    border: 1px solid $color-button;
+                    color: $color-text-1;
+                }
+            }
+        }
+    }
+}
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// section 2
+// galerie
+.section-2 {
+    width: 100%;
+    
+    // projets
+    .projets {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        .projet{
+            position: relative;
+            width: 30%;
+            background: #fdfafa;
+            margin-bottom: 30px;
+            cursor: pointer;
+            &:hover {
+                transition: 0.3s;
+                background: rgb(36, 20, 12);
+
+                h4 {
+                    color: $color-text-1;
+                }
+
+                p {
+                    color: $color-text-hover;
+                }
+            }
+            div {
+                margin: 0;
+                font-family: Raleway;
+                padding-left: 30px;
+                h4 {
+                    font-size: 18px;
+                    color: $color-text-hover;
+                }
+
+                p {
+                    font-size: 14px;
+                    color: $color-text-2;
+                }
+            }
+        }
+    }
+
+    // boutton 3
+    .button-3 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 80px;
+        :hover {
+            transform: scale(0.98);
+        }
+        button {
+            width: 170px;
+            height: 50px;
+            margin: 50px 0px;
+            font-size: 18px;
+            border-radius: 5px;
+            color: $color-text-1;
+            background-color: $color-button;
+            border-bottom: 3px solid darken($color: $color-button, $amount: 9);
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            cursor: pointer;
+        } 
+    }
+}
+
+
+// --------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+// video de presentation (avec images)
+aside {
+    position: relative;
+    width: 100%;
+    height: 705px;
+    background-color: rgba(0, 0, 0, 0.5);
+    img {
+        position: absolute;
+        z-index: -3;
+    }
+    .slogan-presentation {
+        width: 50%;
+        margin-left: 25%;
+        font-family: $font-button;
+        text-align: center;
+        color: $color-text-1;
+        position: absolute;
+        top: 210px;
+        i {
+            font-size: 100px;
+            margin-bottom: 45px;
+            background-color: #504f4f9f;
+            padding: 15px;
+            border-radius: 70px;
+        }
+
+        .slg-prstn {
+            h3 {
+                font-size: 25px;
+            }
+    
+            p {
+                font-size: 16px;
+            }
+        }
+
+        .temps-lecture {
+            p {
+                color: $color-text-hover;
+            }
+        }
+
+    }
+}

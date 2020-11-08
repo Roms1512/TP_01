@@ -8,6 +8,10 @@ img {
   width: 100%;
 }
 
+button {
+  font-family: Raleway;
+}
+
 header {
   height: 100%;
   width: 100%;
@@ -168,20 +172,29 @@ header .sliders .slider:hover {
   margin-right: 17px;
   border-bottom: 3px solid #dbdbdb;
   padding-bottom: 33px;
+  cursor: pointer;
 }
-.competences .competence:nth-child(2n+2) {
+.competences .competence:hover {
+  transition: 0.2s;
   color: #c7b299;
   border-bottom: 3px solid;
 }
 .competences .competence i {
   font-size: 47px;
 }
+.competences .competence i:nth-child(2) {
+  color: #555555;
+}
 .competences .competence h4 {
   font-size: 21px;
 }
+.competences .competence h4:nth-child(2n+1) {
+  color: #555555;
+}
 .competences .competence p {
   font-size: 13px;
-  color: #555555;
+  color: #9e9e9e;
+  color: #9e9e9e;
 }
 .competences .competence i, .competences .competence h4, .competences .competence p {
   width: 100%;
@@ -191,6 +204,11 @@ header .sliders .slider:hover {
   width: 100%;
   font-family: Raleway;
   background: #f3f3f3;
+}
+.section-1 .sct-1_part-1 {
+  text-align: center;
+  margin: auto;
+  width: 50%;
 }
 .section-1 .sct-1_part-1 .titre-sct-1 {
   display: flex;
@@ -202,12 +220,14 @@ header .sliders .slider:hover {
   margin-top: 82px;
   margin-bottom: 24px;
   padding-bottom: 0;
+  color: #555555;
 }
 .section-1 .sct-1_part-1 .titre-sct-1 p {
   margin-top: 0;
   padding-top: 0;
   font-size: 15px;
   margin-bottom: 522px;
+  color: #9e9e9e;
 }
 .section-1 .sct-1_part-2 {
   height: 100%;
@@ -247,6 +267,149 @@ header .sliders .slider:hover {
   border-right: none;
   border-left: none;
   cursor: pointer;
+}
+
+.titre-nav-projet {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+  font-family: Raleway;
+}
+.titre-nav-projet h3 {
+  font-size: 26px;
+  padding-top: 0;
+  margin-top: 82px;
+  margin-bottom: 0;
+  color: #555555;
+}
+.titre-nav-projet p {
+  padding-top: 0;
+  margin-top: 24px;
+  color: #9e9e9e;
+}
+.titre-nav-projet .menu-projet ul {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  display: flex;
+  list-style: none;
+  width: 80%;
+  justify-content: space-between;
+}
+.titre-nav-projet .menu-projet ul li {
+  border: 1px solid #9e9e9e;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 3%;
+  padding-left: 3%;
+  border-radius: 5px;
+  color: #9e9e9e;
+  text-decoration: none;
+  cursor: pointer;
+}
+.titre-nav-projet .menu-projet ul li:hover {
+  transition: 0.3s;
+  background-color: #998675;
+  border: 1px solid #998675;
+  color: #FFF;
+}
+
+.section-2 {
+  width: 100%;
+}
+.section-2 .projets {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-around;
+}
+.section-2 .projets .projet {
+  position: relative;
+  width: 30%;
+  background: #fdfafa;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.section-2 .projets .projet:hover {
+  transition: 0.3s;
+  background: #24140c;
+}
+.section-2 .projets .projet:hover h4 {
+  color: #FFF;
+}
+.section-2 .projets .projet:hover p {
+  color: #c7b299;
+}
+.section-2 .projets .projet div {
+  margin: 0;
+  font-family: Raleway;
+  padding-left: 30px;
+}
+.section-2 .projets .projet div h4 {
+  font-size: 18px;
+  color: #c7b299;
+}
+.section-2 .projets .projet div p {
+  font-size: 14px;
+  color: #9e9e9e;
+}
+.section-2 .button-3 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+.section-2 .button-3 :hover {
+  transform: scale(0.98);
+}
+.section-2 .button-3 button {
+  width: 170px;
+  height: 50px;
+  margin: 50px 0px;
+  font-size: 18px;
+  border-radius: 5px;
+  color: #FFF;
+  background-color: #998675;
+  border-bottom: 3px solid #816f5f;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  cursor: pointer;
+}
+
+aside {
+  position: relative;
+  width: 100%;
+  height: 705px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+aside img {
+  position: absolute;
+  z-index: -3;
+}
+aside .slogan-presentation {
+  width: 50%;
+  margin-left: 25%;
+  font-family: Raleway;
+  text-align: center;
+  color: #FFF;
+  position: absolute;
+  top: 210px;
+}
+aside .slogan-presentation i {
+  font-size: 100px;
+  margin-bottom: 45px;
+  background-color: #504f4f9f;
+  padding: 15px;
+  border-radius: 70px;
+}
+aside .slogan-presentation .slg-prstn h3 {
+  font-size: 25px;
+}
+aside .slogan-presentation .slg-prstn p {
+  font-size: 16px;
+}
+aside .slogan-presentation .temps-lecture p {
+  color: #c7b299;
 }
 
 /*# sourceMappingURL=site.css.map */
