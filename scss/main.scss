@@ -67,6 +67,10 @@ header {
                     color: $color-text-1;
                     font-family: Raleway;
                 }
+
+                &:hover {
+                    transform: scale(0.98);
+                }
             }
             
             // menu de navigation
@@ -82,9 +86,11 @@ header {
                         padding-top: 60px;
                         margin-right: 30px;
                         list-style: none;
-                        &:hover {
-                            transform: scale(1.08);
+
+                        &:active {
+                            transform: scale(0.9);
                         }
+
                         a {
                             font-family: Roboto;
                             color: $color-text-1;
@@ -115,6 +121,13 @@ header {
             cursor: pointer;
             position: absolute;
             top: 450px;
+            &:hover {
+                color: $color-text-2;
+            }
+
+            &:active {
+                transform: scale(0.98);
+            }
         } 
 
         .fa-angle-left {
@@ -123,6 +136,7 @@ header {
         .fa-angle-right {
             right: 150px;
         }
+
     }
 
     // slogan
@@ -227,8 +241,13 @@ header {
             transition: 0.2s;
             color: $color-text-hover;
             border-bottom: 3px solid;
-
         }
+
+        &:active {
+            transform: scale(1.06);
+            transition: 0s;
+        }
+
         i {
             font-size: 47px;
             &:nth-child(2) {
@@ -346,63 +365,63 @@ header {
 // --------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-// Titre et Navigation des differents projets
-.titre-nav-projet {
-    width: 50%;
-    text-align: center;
-    margin: auto;
-    font-family: Raleway;
-    h3 {
-        font-size: 26px;
-        padding-top: 0;
-        margin-top: 82px;
-        margin-bottom: 0;
-        color: $color-titre;
-    }
-    
-    p {
-        padding-top: 0;
-        margin-top: 24px;
-        color: $color-text-2;
-    }
-
-    .menu-projet {
-        ul {
-            margin-top: 40px;
-            margin-bottom: 40px;
-            display: flex;
-            list-style: none;
-            width: 80%;
-            justify-content: space-between;
-            li {
-                border: 1px solid $color-text-2;
-                padding-top: 10px;
-                padding-bottom: 10px;
-                padding-right: 3%;
-                padding-left: 3%;
-                border-radius: 5px;
-                color: $color-text-2;
-                text-decoration: none;
-                cursor: pointer;
-                &:hover{
-                    transition: 0.3s;
-                    background-color: $color-button;
-                    border: 1px solid $color-button;
-                    color: $color-text-1;
-                }
-            }
-        }
-    }
-}
-
-
-// --------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 // section 2
 // galerie
 .section-2 {
     width: 100%;
+
+    // Titre et Navigation des differents projets
+    .titre-nav-projet {
+        width: 50%;
+        text-align: center;
+        margin: auto;
+        font-family: Raleway;
+        h3 {
+            font-size: 26px;
+            padding-top: 0;
+            margin-top: 82px;
+            margin-bottom: 0;
+            color: $color-titre;
+        }
+        
+        p {
+            padding-top: 0;
+            margin-top: 24px;
+            color: $color-text-2;
+        }
+    
+        .menu-projet {
+            ul {
+                margin-top: 40px;
+                margin-bottom: 40px;
+                display: flex;
+                list-style: none;
+                width: 80%;
+                justify-content: space-between;
+                li {
+                    border: 1px solid $color-text-2;
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                    padding-right: 3%;
+                    padding-left: 3%;
+                    border-radius: 5px;
+                    color: $color-text-2;
+                    text-decoration: none;
+                    cursor: pointer;
+                    &:hover{
+                        transition: 0.3s;
+                        background-color: $color-button;
+                        border: 1px solid $color-button;
+                        color: $color-text-1;
+                    }
+
+                    &:active {
+                        transform: scale(0.8);
+                    }
+                }
+            }
+        }
+    }
     
     // projets
     .projets {
@@ -625,6 +644,10 @@ header {
                 }
             }
 
+            &:active {
+                transform: scale(1.06);
+            }
+
             i {
                 color: $color-text-hover;
                 font-size: 45px;
@@ -841,3 +864,189 @@ header {
 
 
 // footer
+footer {
+    width: 100%;
+    height: 100%;
+    // footer partie 1
+    // les differents logos
+    .logo-client {
+        background: #000000c2;
+        height: 490px;
+        img {
+            position: absolute;
+            z-index: -5;
+            height: 490px;
+        }
+        .differents-logo {
+            padding-top: 140px;
+            z-index: 5;
+            width: 100%;
+            text-align: center;
+            font-size: 210px;
+            height: 490px;
+            i {
+                color: $color-text-1;
+            }
+        } 
+    }
+
+    // footer part 2
+    .footer-part-2 {
+        width: 100%;
+        background: #0a0a0a;
+        display: flex;
+        justify-content: center;
+        .part-2 {
+            display: flex;
+            width: 80%;
+            font-family: $font-button;
+            justify-content: center;
+            .paragraphe {
+                color: $color-text-2;
+                width: 23%;
+                margin: 0 15px;
+                h4 {
+                    color: $color-text-1;
+                }
+                
+                &__2, &__3, &__4 {
+                    cursor: pointer;
+                    margin-top: 110px;
+                }
+
+                &__1 {
+                    // logo
+                    .logo-footer {
+                        margin-top: 80px;
+                        display: flex;
+                        width: 182px;
+                        height: 56px;
+                        align-items: center;
+                        cursor: pointer;
+                        img {
+                            width: 64px;
+                        }
+                        
+                        p {
+                            font-size: 3vh;
+                            width: 115px;
+                            color: $color-text-1;
+                            font-family: Raleway;
+                        }
+                    }
+    
+                    .lire-plus {
+                        display: flex;
+                        align-items: center;
+                        color: $color-text-1;
+                        margin-bottom: 145px;
+                        padding: 0;
+                        cursor: pointer;
+                        &:hover {
+                            color: $color-text-hover;
+                        }
+
+                        i {
+                            padding-left: 10px;
+                        }
+                    }
+                }
+                
+                &__2 {
+                    .post:nth-last-of-type(1), .post:nth-last-of-type(2) {
+                        border-top: 1px solid $color-titre;
+                    }
+                    
+                    .post {
+                        transition: all 0.3s;
+                        h5 {
+                            color: $color-titre;
+                        }
+                        
+                        &:hover {
+                            transform: scale(1.06);
+                            h5 {
+                                color: $color-text-1;
+                            }
+        
+                            p {
+                                color: $color-text-hover;
+                            }
+                        }
+                    }   
+                }
+                
+
+                &__3 {
+                    .tweet:nth-last-of-type(1), .tweet:nth-last-of-type(2) {
+                        border-top: 1px solid $color-titre;
+                    }
+
+                    .tweet {
+                        transition: all 0.3s;
+                        h5 {
+                            color: $color-titre;
+                        }
+
+                        p > span {
+                            color: rgb(124, 181, 255);
+                        }
+
+                        &:hover {
+                            transform: scale(1.06);
+                            h5 {
+                                color: $color-text-1;
+                            }
+        
+                            p {
+                                color: $color-text-hover;
+                            }
+                        }
+                    }
+                }
+            }
+        }  
+    }
+    
+    // footer partie 3
+    .menu-footer {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        background-color: black;
+
+        .menu-footer-part-1, .menu-footer-part-2 {
+            ul {
+                display: flex;
+                margin-right: 10px;
+                li {
+                    font-family: $font-button;
+                    color: $color-text-2;
+                    list-style-type: none;
+                    padding-right: 15px;
+                    padding-left: 15px;
+                    border-left: $color-text-2;
+                    cursor: pointer;
+                    &:nth-of-type(3){
+                        color: $color-text-hover;
+                    }
+
+                    &:nth-of-type(2), &:nth-of-type(3), &:nth-of-type(4) {
+                        border-left: 1px solid $color-titre;
+                    }
+
+                    strong {
+                        color: $color-text-1;
+                    }
+
+                    &:hover {
+                        transform: scale(1.06);
+                    }
+                    &:active {
+                        transform: scale(0.98);
+                    }
+                }
+            }
+        }
+    }
+}
