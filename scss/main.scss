@@ -625,8 +625,14 @@ header {
 
         // image rendu mobile
         .img-section-3 {
-            margin: auto;
+            margin: auto auto 0 auto;
             margin-bottom: 0;
+            img {
+                position: relative;
+                top: 4px;
+                object-fit: cover;
+                height: 80%;
+            }
         }
 
         .descriptions {
@@ -1104,8 +1110,8 @@ footer {
                         display: flex;
                         flex-wrap: wrap;
                         .img-footer {
-                            width: 130px;
-                            padding-bottom: 10px;
+                            width: 120px;
+                            padding-bottom: 12px;
                             overflow: hidden;
                             &:hover {
                                 transition: 0.3s;
